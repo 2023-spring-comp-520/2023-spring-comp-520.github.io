@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNHM COMP520</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+  <link href="../../assets/css/main.css" rel="stylesheet" >
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-dark pt-5 pb-4" data-bs-theme="dark">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand" href="../../index.html">
+        <span class="text-secondary fw-bold">
+          COMP520
+        </span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">>
+          <li class="nav-item">
+            <a class="nav-link" href="../schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../discord.html">Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../links.html">Links</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main section -->
+  <section id="main">
+    <div class="container-lg">
+        <div class="alert alert-primary" role="alert">
+          <h2>PostgreSQL Intro 1</h2>
+          <hr>
+          <b>Intent</b>: Download & Load the sample Database. First queries. 
+          <hr>
+          <b>Submission</b>: Take screenshots of the success of each step, and issue queries against the information schema in order to demonstrate SQL based results of having explored the DB objects.
+        </div>
+        <ol>
+            <li>Visit <a href="http://www.postgresqltutorial.com/" target="_blank" rel="noopener noreferrer">PostgreSQL Tutorial</a> Links and get setup, and if quickly successful - consider going on to Section 1 (see bottom).</li>
+            <li><a href="http://www.postgresqltutorial.com/connect-to-postgresql-database/" target="_blank" rel="noopener noreferrer">Connect to a PG DB Server</a> or pgAdmin(4) (ie don't go on to "Connect to PG database from other Applications")</li>
+            <li><a href="http://www.postgresqltutorial.com/postgresql-sample-database/" target="_blank" rel="noopener noreferrer">Download Sample DB</a></li>
+            <li>
+                <a href="http://www.postgresqltutorial.com/load-postgresql-sample-database/" target="_blank" rel="noopener noreferrer">Load Sample DB</a>
+                <ul>
+                    <li>You will need to set the Bin Path when using pgAdmin in order to successfully Restore the DVDRental extract.  Here's a hint: https://stackoverflow.com/questions/39408061/postgresql-binary-path-in-pgadmin-4-1-0-rc1</li>
+                    <li>When loading the sample database, note that in the bottom right corner of the window modal which you use to find the extracted dvdrental tar file, the default is for Custom Files and it won't find the extracted file (no file extension), thus it won't see the file!  Change the drop down to All Files, and your dvdrental extracted file should appear.</li>
+                </ul>
+            </li>
+            <li><a href="http://www.postgresqltutorial.com/postgresql-server-and-database-objects/" target="_blank" rel="noopener noreferrer">Explore Server and DB Objects</a></li>
+        </ol>
+        <h2>Section 1 - Querying Data</h2>
+        <ol>
+            <li>
+                <a href="http://www.postgresqltutorial.com/postgresql-select/" target="_blank" rel="noopener noreferrer">Select - shows you how to query data from a single table</a>
+            </li>
+            <li>
+                <a href="http://www.postgresqltutorial.com/postgresql-order-by/" target="_blank" rel="noopener noreferrer">Order By -  guides you on how to sort the result set returned from a query.</a>
+            </li>
+            <li>
+              <a href="http://www.postgresqltutorial.com/postgresql-select-distinct/" target="_blank" rel="noopener noreferrer">Select Distinct - provides you a clause that removes duplicate rows in the result set.</a>
+          </li>
+        </ol>
+    </div>
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
