@@ -7,7 +7,7 @@ tasks:
       python -m http.server 8000
       clear
   - name: Open webserver in terminal 2
-    command: python -m http.server 8000
+    command: cd docs && python -m http.server 8000
 vscode:
   extensions:
     - ms-python.python
